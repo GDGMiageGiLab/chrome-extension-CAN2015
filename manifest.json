@@ -1,0 +1,16 @@
+{
+    "name": "Blog Extension",
+    "description": "Paloma's Blogger Extension", 
+	"browser_action": {
+        "default_icon": {
+            "38": "./images/can.png"
+            }, 
+        "default_title": "Your Extension Popup Title", 
+        "default_popup": "index.html"
+    }, 
+    "manifest_version": 2,
+    "update_url": "http://clients2.google.com/service/update2/crx",
+    "version": "0.1"
+}
+
+
