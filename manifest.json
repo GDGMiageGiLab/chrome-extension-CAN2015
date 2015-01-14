@@ -1,10 +1,15 @@
 {
+<<<<<<< HEAD
     "name": "CAN 2015 by GDG Miage Gi",
     "description": "La Coupe d'Afrique des nations, couramment abrégée en CAN, est la plus importante compétition internationale de football en Afrique. Elle est organisée par la Confédération africaine de football (CAF) et met aux prises les sélections nationales africaines. cette application est donc un produit du GDG Miage Gi", 
     "icons": {"16": "./images/16.png", "48": "./images/48.png", "128": "./images/128.png"},
     "permissions": [
     "notifications"
   ],
+=======
+    "name": "CAN GDG 2015 Extension",
+    "description": "CAN 2015 Chrome Extension", 
+>>>>>>> origin/master
 	"browser_action": {
         "default_icon": {
             "38": "./images/can.png"
