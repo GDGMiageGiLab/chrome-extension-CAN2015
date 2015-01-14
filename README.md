@@ -1,7 +1,3 @@
-Created by Codrops
+La Coupe d'Afrique des nations, couramment abrégée en CAN, est la plus importante compétition internationale de football en Afrique. Elle est organisée par la Confédération africaine de football (CAF) et met aux prises les sélections nationales africaines. Cette compétition, disputée tous les deux ans, s'est déroulée pour la première fois en 1957 au Soudan. Le gagnant se qualifie pour la Coupe des confédérations. Il s'agira de construire une application pour l’édition 2015.
 
-http://www.codrops.com
-
-Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
-
-Read more here: http://tympanus.net/codrops/licensing/
+Cette extension est developpé dans le cadre de la CAN 2015
