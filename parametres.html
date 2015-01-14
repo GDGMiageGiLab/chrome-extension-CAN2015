@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+    	<script src="js/options.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
@@ -35,20 +36,38 @@
 						<li><a class="icon icon-user" href="#">Resultats</a></li>
 						<li><a class="icon icon-news" href="#">News</a></li>
 						<li><a class="icon icon-wallet" href="#">Credits</a></li>
-						<li><a class="icon icon-params" href="parametres.html">Paramètres</a></li>
+						<li><a class="icon icon-params" href="#">Paramètres</a></li>
 					</ul>
 				</nav>
 				<div class="st-content"><!-- this is the wrapper for the content -->
 					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-							<div class="codrops-top clearfix">
-								<span class="right"><a class="codrops-icon codrops-icon-drop" href="#"><span>Télécharger votre application mobile</span></a></span>
-							</div>
 							<header class="codrops-header">
 								<h1>Coupe d'Afrique des Nations 2015 <span>Guinée Equatoriale</span> </h1>
-								<div id="st-trigger-effects" class="column">
+								<div id="st-trigger-effects" >
 									<button data-effect="st-effect-3">Menu</button>
 								</div>
 							</header>
+							<section class="param">
+								<h1>Options</h1>
+							    <form id="options">
+							      <input type="checkbox" name="isActivated" checked>
+							      delai d'apparution
+							      <select name="frequency">
+							        <option>1</option>
+							        <option>2</option>
+							        <option>3</option>
+							        <option>4</option>
+							        <option>5</option>
+							        <option>10</option>
+							        <option>15</option>
+							        <option>20</option>
+							        <option>25</option>
+							        <option>30</option>
+							      </select>
+							      minute(s).
+							    </form>
+							</section>
+							    
 					
 					</div><!-- /main -->
 				</div><!-- /st-content-inner -->

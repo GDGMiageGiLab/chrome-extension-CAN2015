@@ -1,16 +1,22 @@
 {
-    "name": "Blog Extension",
-    "description": "Paloma's Blogger Extension", 
+    "name": "CAN 2015 by GDG Miage Gi",
+    "description": "La Coupe d'Afrique des nations, couramment abrégée en CAN, est la plus importante compétition internationale de football en Afrique. Elle est organisée par la Confédération africaine de football (CAF) et met aux prises les sélections nationales africaines. cette application est donc un produit du GDG Miage Gi", 
+    "icons": {"16": "./images/16.png", "48": "./images/48.png", "128": "./images/128.png"},
+    "permissions": [
+    "notifications"
+  ],
 	"browser_action": {
         "default_icon": {
             "38": "./images/can.png"
             }, 
-        "default_title": "Your Extension Popup Title", 
+        "default_title": "CAN 2015", 
         "default_popup": "index.html"
     }, 
+    "background": { "scripts": ["js/background.js"] },
     "manifest_version": 2,
     "update_url": "http://clients2.google.com/service/update2/crx",
-    "version": "0.1"
+    "version": "1.0"
 }
+
 
 
