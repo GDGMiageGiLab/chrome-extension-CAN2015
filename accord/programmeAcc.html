@@ -1,62 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
+<html lang="en">
+    <head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>CAN GDG 2015</title>
-		<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
-		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/icons.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div id="st-container" class="st-container">
-			<!-- 	
-				example menus 
-				these menus will be on top of the push wrapper
-			-->
-			<div class="st-pusher">
-				<!-- 	
-					example menus 
-					these menus will be under the push wrapper
-				-->
-				<nav class="st-menu st-effect-3" id="menu-3">
-					<h2 class="icon icon-world"> CAN 2015</h2>
-					<ul>
-						<li><a class="icon icon-arrow-right-4" href="index.html">Accueil</a></li>
-						<li><a class="icon icon-clock" href="historique.html">Historiques</a></li>
-						<li><a class="icon icon-t-shirt" href="equipe.html">Equipes</a></li>
-						<li><a class="icon icon-location" href="stade.html">Stades</a></li>
-						<li><a class="icon icon-calendar" href="programme.html">Programme des Matchs</a></li>
-						<li><a class="icon icon-user" href="#">Resultats</a></li>
-						<li><a class="icon icon-news" href="#">News</a></li>
-						<li><a class="icon icon-wallet" href="#">Credits</a></li>
-					</ul>
-				</nav>
-				<div class="st-content"><!-- this is the wrapper for the content -->
-					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-						<!-- Top Navigation -->
-						<div class="codrops-top clearfix">
-							<span class="left"><a class="codrops-icon codrops-icon-prev" href="#"><span><label data-effect="st-effect-3">Menu</label></span></a></span>
-							<span class="right"><a><span>Programme des Matchs CAN 2015</span></a></span>
-						</div>
-						<header class="codrops-header">
-							<h1><span>Programmes CAN 2015</span><p style="margin-top: 0px; margin-bottom: 0px;"></p></h1>
-						</header>
-						<div class="main clearfix">
-							<div class="info" style="margin-left: 15px;">
-								
-								<table style="width:500px;">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Accordion with CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Accordion with CSS3" />
+        <meta name="keywords" content="accordion, css3, sibling selector, radio buttons, input, pseudo class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+    </head>
+    <body>
+        <div class="container" style="width:550px; height:960px; background:url(../images/stade.jpg);">
+			<!-- Codrops top bar -->
+			<div class="codrops-top">
+                <a href="../index.html">
+                    Accueil
+                </a>
+				<a href="historiqueAcc.html">
+                    Historiques
+                </a>
+				<a href="../equipe.html">
+                    Equipes
+                </a>
+				<a href="stadeAcc.html">
+                    Stades
+                </a>
+				<a href="">
+                    Résultats
+                </a>
+                <span class="right">
+					<a href="">News</a>
+			
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+			<header>
+				<h1 style="padding-top: 40px; color:#fbf9f9; padding-bottom: 40px;">Programmes de Matchs CAN 2015 <span></span></h1>
+			</header>
+			
+			<section class="ac-container" style="width:500px;  margin-top:0px;" >
+						
+				<div>
+					<input id="ac-1" name="accordion-1" type="checkbox" />
+					<label for="ac-1" style="text-align:center;">17 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">17 Janvier 2015</h3>
-										</tr>
 										<tr style="height: 30px;">
 											<td style="width:150px"><p style="text-align: center;">Guinée Equatoriale</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/gq.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -88,11 +81,15 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>
+				
+				<div>
+					<input id="ac-2" name="accordion-1" type="checkbox" />
+					<label for="ac-2" style="text-align:center;">18 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">18 Janvier 2015</h3>
-										</tr>
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Zambie</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/zm.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -124,11 +121,15 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>
+				
+				<div>
+					<input id="ac-3" name="accordion-1" type="checkbox"/>
+					<label for="ac-3" style="text-align:center;">19 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">19 Janvier 2015</h3>
-										</tr>
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Ghana</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/gh.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -160,11 +161,15 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>
+				
+				<div>
+					<input id="ac-4" name="accordion-1" type="checkbox" />
+					<label for="ac-4" style="text-align:center;">20 Janvier 2015</label>
+					<article class="ac-prog">
+							<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">20 Janvier 2015</h3>
-										</tr>
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Côte d'Ivoire</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/ci.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -196,11 +201,15 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>	
+				
+				<div>
+					<input id="ac-5" name="accordion-1" type="checkbox" />
+					<label for="ac-5" style="text-align:center;">21 Janvier 2015</label>
+					<article class="ac-small">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">21 Janvier 2015</h3>
-										</tr>
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Guinée Equatoriale</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/gq.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -232,13 +241,17 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>	
+				
+				<div>
+					<input id="ac-6" name="accordion-1" type="checkbox" />
+					<label for="ac-6" style="text-align:center;">22 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
 										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">22 Janvier 2015</h3>
-										</tr>
-										<tr>
-											<td style="width:150px"><p style="text-align: center;">Zambiep></td>
+											<td style="width:150px"><p style="text-align: center;">Zambie</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/zm.png" style="width:30px; height:23px; margin-left:8px;"></td>
 											<td><p style="text-align: justify; font-size:1.2m; margin-left:8px;">17:00</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/tn.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -268,11 +281,15 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>	
+				
+				<div>
+					<input id="ac-6" name="accordion-1" type="checkbox" />
+					<label for="ac-6" style="text-align:center;">23 Janvier 2015</label>
+					<article class="ac-prog">
+							<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">23 Janvier 2015</h3>
-										</tr>
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Ghana</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/gh.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -304,11 +321,16 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>	
+				
+				<div>
+					<input id="ac-7" name="accordion-1" type="checkbox" />
+					<label for="ac-7" style="text-align:center;">24 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">24 Janvier 2015</h3>
-										</tr>
+										
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Côte d'Ivoire</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/ci.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -340,11 +362,15 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>	
+				
+				<div>
+					<input id="ac-8" name="accordion-1" type="checkbox" />
+					<label for="ac-8" style="text-align:center;">25 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">25 Janvier 2015</h3>
-										</tr>
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Guinée Equatoriale</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/gq.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -376,11 +402,16 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>	
+				
+				<div>
+					<input id="ac-9" name="accordion-1" type="checkbox" />
+					<label for="ac-9" style="text-align:center;">26 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">26 Janvier 2015</h3>
-										</tr>
+									
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Tunisie</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/tn.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -412,11 +443,16 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>	
+				
+				<div>
+					<input id="ac-10" name="accordion-1" type="checkbox" />
+					<label for="ac-10" style="text-align:center;">27 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">27 Janvier 2015</h3>
-										</tr>
+										
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Afrique du Sud</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/za.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -448,11 +484,16 @@
 										</tr>
 									</thead>
 								</table>
-								<table style="width:500px;">
+					</article>
+				</div>	
+				
+				<div>
+					<input id="ac-11" name="accordion-1" type="checkbox" />
+					<label for="ac-11" style="text-align:center;">28 Janvier 2015</label>
+					<article class="ac-prog">
+						<table style="width:500px;">
 									<thead>
-										<tr>
-										<h3 style="text-align: justify; font-size:1.5m; background:#4de183; margin-right:15px;">28 Janvier 2015</h3>
-										</tr>
+										
 										<tr>
 											<td style="width:150px"><p style="text-align: center;">Cameroun</p></td>
 											<td><img src="http://flags.fmcdn.net/data/flags/normal/cm.png" style="width:30px; height:23px; margin-left:8px;"></td>
@@ -484,19 +525,9 @@
 										</tr>
 									</thead>
 								</table>
-								
-								
-								</br>
-								</br>
-								</br>
-							</div>
-						</div><!-- /main -->
-					</div><!-- /st-content-inner -->
-					<p><a href="#"><img src="images/can.gif"></a></p>
-				</div><!-- /st-content -->
-			</div><!-- /st-pusher -->
-		</div><!-- /st-container -->
-		<script src="js/classie.js"></script>
-		<script src="js/sidebarEffects.js"></script>
-	</body>
+					</article>
+				</div>	
+			</section>
+        </div>
+    </body>
 </html>
