@@ -13,10 +13,11 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/common-style.css"/>
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		<div id="st-container" class="st-container" style="background:url(images/stadeFoot1.jpg);">
+		<div id="st-container" class="st-container" style="background:url(images/stade.jpg);">
 			<!-- 	
 				example menus 
 				these menus will be on top of the push wrapper
@@ -45,13 +46,16 @@
 					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 						<div class="codrops-top clearfix" style="font-size:10px;">
 							<span class="left"><a class="codrops-icon codrops-icon-prev" href="#"><span><label data-effect="st-effect-3">Menu</label></span></a></span>
-							<span class="right"><a><span>Accueil</span></a></span>
+							<span class="right"><a><span>Classement</span></a></span>
 						</div>
-							<header class="codrops-header">
-								<h1 style="color:#fff;">Coupe d'Afrique des Nations 2015 <span>Guinée Equatoriale</span> </h1>
-								<div id="st-trigger-effects" class="column">
-								</div>
-							</header>
+						<header class="codrops-header" style="margin-bottom: 0px;">
+							<h1 style="color:#fff;">CLASSEMENT CAN 2015</h1>
+						</header>
+						<section class="ac-container" style="width:500px;  margin-top:0px;" >	
+							<div id="main-container" class="st-container" style="background:url(images/fondBlanc.png);width: 500px;margin-left: 15px;">
+								<img class="ajax-loader" src="images/ajax-loader.gif" alt=""/>
+							</div>
+						</section>
 			
 				</div><!-- /st-content-inner -->
 					<!--p><a href="#"><img src="images/can.gif"></a></p-->
@@ -60,5 +64,7 @@
 		</div><!-- /st-container -->
 		<script src="js/classie.js"></script>
 		<script src="js/sidebarEffects.js"></script>
+		<script src="js/jquery-2.1.1.js"></script>
+         <script src="js/results.js"></script>
 	</body>
 </html>
